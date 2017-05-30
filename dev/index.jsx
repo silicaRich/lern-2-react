@@ -1,6 +1,8 @@
 ﻿import React from "react";
 import ReactDOM from "react-dom";
- 
+
+
+// First example of how to put a component on the page via react.
 var HelloWorld = React.createClass({
     render: function() {
         return (
@@ -8,7 +10,7 @@ var HelloWorld = React.createClass({
       );
     }
 });
- 
+
 ReactDOM.render(
   <div>
     <HelloWorld greetTarget="Batman"/>
@@ -18,5 +20,26 @@ ReactDOM.render(
     <HelloWorld greetTarget="Bono"/>
     <HelloWorld greetTarget="Catwoman"/>
   </div>,
-document.querySelector("#container")
+    document.querySelector("#container1")
 );  
+// End first example
+
+
+
+// Second example
+    const Card = (props) => {
+        return (
+            <div>
+                <img src="" />
+                <div>
+                    <div>Name</div>
+                    <div>Company</div>
+                </div>
+            </div>
+        );
+
+    };
+
+    ReactDOM.render(<Card />, 
+        document.querySelector("#container2"));
+// End second example

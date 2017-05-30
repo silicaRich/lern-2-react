@@ -9831,30 +9831,54 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-var HelloWorld = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createClass({
-  displayName: "HelloWorld",
-
-  render: function () {
+const Card = props => {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      "p",
-      null,
-      "Hello, ",
-      this.props.greetTarget,
-      "!"
+        "div",
+        null,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "" }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "div",
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                null,
+                "Name"
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                null,
+                "Company"
+            )
+        )
     );
-  }
+};
+
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Card, null), document.querySelector("#container2"));
+
+var HelloWorld = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createClass({
+    displayName: "HelloWorld",
+
+    render: function () {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "p",
+            null,
+            "Hello, ",
+            this.props.greetTarget,
+            "!"
+        );
+    }
 });
 
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-  "div",
-  null,
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld, { greetTarget: "Batman" }),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld, { greetTarget: "Iron Man" }),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld, { greetTarget: "Nicolas Cage" }),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld, { greetTarget: "Mega Man" }),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld, { greetTarget: "Bono" }),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld, { greetTarget: "Catwoman" })
-), document.querySelector("#container"));
+    "div",
+    null,
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld, { greetTarget: "Batman" }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld, { greetTarget: "Iron Man" }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld, { greetTarget: "Nicolas Cage" }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld, { greetTarget: "Mega Man" }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld, { greetTarget: "Bono" }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld, { greetTarget: "Catwoman" })
+), document.querySelector("#container1"));
 
 /***/ }),
 /* 88 */
